@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html dir=rtl lang=ar style>
+
+<meta charset=utf-8>
+<style>
+   
+    html {
+        min-width: 320px
+    }
+
+    * {
+        margin: 0px;
+        border-collapse: collapse;
+        box-sizing: border-box
+    }
+
+    body {
+        position: relative;
+        
+        font-family: Arial, "Nimbus Sans L", Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.4
+    }
+
+    #wrapper {
+        width: 100%;
+        max-width: 960px;
+        margin: 0px auto;
+        padding: 0px 10px
+    }
+
+    p {
+        font-size: 16px;
+        margin: 0px 0px 15px;
+        text-align: right
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 0px 0px 15px;
+        font-family: Tahoma, Geneva, Kalimati, sans-serif;
+        text-align: right
+    }
+
+    h2 {
+        font-size: 25px;
+        margin: 0px 0px 15px;
+        font-family: Tahoma, Geneva, Kalimati, sans-serif
+    }
+
+    a {
+        font-weight: bold;
+        color: rgb(146, 0, 0)
+    }
+
+    a:hover {
+        text-decoration: none
+    }
+
+    #footer {
+        padding: 20px 0px;
+        text-align: center;
+        font-weight: bold;
+        width: 100%;
+        font-size: 14px;
+        background-color: rgb(219, 219, 219);
+        margin: auto
+    }
+
+    .footcont {
+        max-width: 960px;
+        margin: auto
+    }
+
+    ol {
+        padding: 0px
+    }
+
+    .text-center {
+        text-align: center
+    }
+
+    .btn {
+        margin: 15px 0px;
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        box-shadow: 0px 1px 2px rgb(34, 34, 34);
+        background: rgb(146, 0, 0) none repeat scroll 0% 0%;
+        border-radius: 10px;
+        transition: all 1s ease-out 0s
+    }
+
+    .btn:hover {
+        transform: scale(1.1)
+    }
+
+    .example {
+        position: relative;
+        max-width: 960px;
+        margin: 0px auto 10px;
+        padding: 5px 0px;
+        border-radius: 5px
+    }
+
+    #tabs-container {
+        clear: both;
+        font-size: 11px;
+        margin: 0px auto;
+        padding: 0px
+    }
+
+    .cartn {
+        height: 28px;
+        text-align: right;
+        font-weight: bold;
+        font-size: 14px;
+        background: rgb(146, 0, 0) none repeat scroll 0% 0%;
+        color: rgb(78, 78, 78)
+    }
+
+    .tabs li {
+        float: right;
+        list-style: outside none none;
+        position: relative
+    }
+
+    .tabs li span:first-child {
+        margin-left: 0px
+    }
+
+    .tabs li span {
+        background: rgb(218, 144, 144) none repeat scroll 0px 0px;
+        border: medium none;
+        border-radius: 5px 5px 0px 0px;
+        color: rgb(255, 255, 255);
+        display: block;
+        margin: 0px 2px 0px 0px;
+        padding: 0px 30px;
+        line-height: 28px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none
+    }
+
+    .hsp {
+        padding-top: 5px;
+        text-align: left
+    }
+
+    .tabs li.active span {
+        background: rgb(146, 0, 0) none repeat scroll 0px 0px;
+        border-bottom: 1px solid rgb(146, 0, 0);
+        border-radius: 5px 5px 0px 0px;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-weight: bold;
+        text-decoration: none
+    }
+
+    .tabs {
+        display: block;
+        margin: 0px;
+        height: 28px;
+        overflow: hidden;
+        padding: 0px;
+        z-index: 100
+    }
+
+    .lotel {
+        margin: auto;
+        max-width: 960px
+    }
+
+    .logo {
+        line-height: 70px;
+        float: right;
+        font-size: 42px;
+        font-family: Tahoma, Geneva, Kalimati, sans-serif;
+        color: rgb(146, 0, 0)
+    }
+
+    .content {
+        margin-left: 10px;
+        width: 67%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        float: right;
+        border: 1px solid rgb(231, 194, 194)
+    }
+
+    .cpt_maincontent {
+        text-align: left
+    }
+
+    .cpt_maincontent {
+        padding: 20px 15px;
+        background-repeat: no-repeat
+    }
+
+    .news_viewall {
+        padding-bottom: 10px;
+        text-align: right;
+        font-size: 85%
+    }
+
+    .post_date {
+        font-size: 12px;
+        color: rgb(153, 153, 153);
+        margin: 0px 0px 15px;
+        text-align: right
+    }
+
+    html,
+    body {
+        padding: 0px;
+        margin: 0px
+    }
+
+    #wrapper .cpt_maincontent img {
+        width: 100%;
+        display: block;
+        margin: 0px auto
+    }
+
+    #wrapper .cpt_maincontent .post_block {
+        max-width: 640px
+    }
+
+    #comments .comment .avatar-68 {
+        width: 50px
+    }
+
+    .commentlist {
+        list-style: outside none none;
+        margin: 0px auto;
+        width: auto
+    }
+
+    .commentlist>li.comment {
+        background: rgb(246, 246, 246) none repeat scroll 0px 0px;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 3px;
+        margin: 0px 0px 15px;
+        padding: 15px;
+        position: relative
+    }
+
+    .comment p {
+        margin: 0px
+    }
+
+    .comment-meta .fn {
+        font-style: normal;
+        color: rgb(146, 0, 0);
+        text-decoration: underline
+    }
+
+    .comment-meta {
+        color: rgb(102, 102, 102);
+        font-size: 12px;
+        line-height: 2.2em
+    }
+
+    .commentlist .avatar {
+        border-radius: 3px;
+        box-shadow: 0px 1px 2px rgb(204, 204, 204);
+        float: right;
+        margin-left: 15px !important;
+        margin-bottom: 5px
+    }
+
+    .time {
+        color: rgb(153, 153, 153)
+    }
+
+    @media screen and (max-width:991px) {
+        #wrapper .cpt_maincontent .post_block {
+            margin: 0px auto
+        }
+
+        .content {
+            width: 100%;
+            float: none;
+            margin: 0px
+        }
+
+        .commentlist:nth-last-child(n+6) {
+            display: none
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .logo {
+            float: none;
+            text-align: center
+        }
+
+        .mob {
+            display: block
+        }
+
+        .btn {
+            font-size: 16px
+        }
+
+        .tabs li span {
+            font-size: 12px;
+            padding: 0px 10px
+        }
+
+        p,
+        li {
+            font-size: 15px
+        }
+
+        h1 {
+            font-size: 22px
+        }
+
+        h2 {
+            font-size: 20px
+        }
+
+        #comments .comment .avatar-68 {
+            width: 40px
+        }
+    }
+
+    blockquote {
+        width: 100%;
+        max-width: 480px;
+        display: block;
+        margin: 15px auto;
+        border-left: 2px solid rgb(51, 51, 51);
+        padding: 2px 10px;
+        text-align: center;
+        font-weight: bold;
+        background-color: rgb(234, 234, 234)
+    }
+
+    #comments .commentlist .depth-2 p {
+        color: rgb(0, 0, 0)
+    }
+</style>
+<title>
+    ARTHROCALM
+</title>
+<meta content="width=device-width, initial-scale=1" name=viewport>
+<style>
+    .sf-hidden {
+        display: none !important
+    }
+</style>
+<meta http-equiv=content-security-policy
+    content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:;">
+</head>
+
+<body>
+    <div id=wrapper>
+        <div class=lotel>
+            <div class=logo> حياة أفضل</div>
+        </div>
+        <div class=example>
+
+            <div id=tabs-container>
+                <ul class=tabs>
+                    <li> <a style="text-decoration: none;" href="#form_form"><span> القائمة </span></a></li>
+                    <li> <a style="text-decoration: none;" href="#form_form"><span>  المدونة</span></a></li>
+                    <li> <a style="text-decoration: none;" href="#form_form"><span> المفاصل </span></a></li>
+                    <li> <a style="text-decoration: none;" href="#form_form"><span> جهات الاتصال  </span></a></li>
+                 
+                </ul>
+            </div>
+            <div class=cartn>
+                <div class=hsp>
+                    <span><img
+                            src="thanks/assets2/images/ico4.svg"
+                            width=30 height=18></span>
+                    <span><img
+                            src="thanks/assets2/images/ico5.svg"
+                            width=30 height=18></span>
+                    <span><img
+                            src="thanks/assets2/images/ico6.svg"
+                            width=30 height=18></span>
+                </div>
+            </div>
+
+            <div style=clear:both></div>
+        </div>
+        <div class=content>
+            <div class=cpt_maincontent>
+                <h1>   كيف نجح هذا الرجل   في التخلص من   إلتهابات المفاصل و ألامها الفظيعة  في
+                    مدة قصيرة  </h1>
+                <div class=post_block>
+                    <div class=post_date> الموضوع: <u> التخلص من ألام المفاصل   </u>
+
+                    </div>
+                    <div class=post_content>
+                        <p>
+                            <a href="#form_form"><img alt class=center
+                                    src="main.jpg"></a>
+                        </p>
+                        <blockquote><a href="#form_form">كيفية
+                                التخلص من  آلام المفاصل</a></blockquote>
+                        <p> يعاني العديد من الأشخاص، بما في ذلك الشباب العربي، من آلام المفاصل. وتعد هذه المشكلة من المشكلات الصحية الشائعة التي يمكن أن تؤثر بشكل كبير على نوعية الحياة والقدرة على القيام بالأنشطة اليومية. ولحسن الحظ، هناك منتجات طبيعية 100% يمكن أن تساعد على تخفيف آلام المفاصل وتحسين الحركة.
+                        </p>
+                        <p> يعاني الشاب العربي "علي" من آلام مفاصل الركبة لفترة طويلة. وكان يشعر بالألم بشكل شديد عند المشي والوقوف لفترات طويلة، مما تسبب له في الكثير من الإحباط والضيق النفسي. بعد تجربة العديد من المنتجات و الطرق  التقليدية دون جدوى، قرر "علي" تجربة منتج طبيعي 100% يسمى " <a href="#form_form">ARTHROCALM</a>"، والذي  يساعد على تخفيف آلام المفاصل  بشكل كبير .
+                        </p>
+                        <p> بدأت في إستخدام <a href="#form_form">ARTHROCALM</a>  للتخلص من ألام ركبتي  وأسفل ظهري. وكما تعـرفون، بدأ يعطي مفعوله! في البداية اعتقدت أنه عمل
+                            كمخدر
+                            لأن بعد حوالي  دقائق من استعماله خفّ الألم. شعرت بتحسن كبير، حتى أسفـل ظهري لم يعـد
+                            يؤلمني.
+                            وفي الحقيقة، كنت قد يأست منه منذ فترة طويلة. أتمنى لو كنت على الأقل اعتنيت بركبتي. كنت
+                            بالفعل
+                            على وشك فقدان الأمل ! ولكن بعـد فترة قصيرة  من  إستعمال المكمل الغذائي <a href="#form_form">ARTHROCALM</a> تمكنت من  التخلص من كل الألام المزعجة 
+                          , أنصح الجميع بالمكمل الغذائي
+                            <a href="#form_form">ARTHROCALM</a> 
+                        </p>
+
+                        <div style="text-align: center;">
+                        <img style="    width: 239px;" src="product.jpg" alt=""></div>
+                        <blockquote> ما هو <a href="#form_form">ARTHROCALM</a> ؟
+                        </blockquote>
+                        <p><a href="#form_form">ARTHROCALM</a> هو مكمل غذائي طبيعي يحتوي على مزيج فعال من المكونات الطبيعية، مثل مستخلص الكركمين و مسحوق الثوم و زيت إكليل الجبل  و مستخلص الزنجبيل  و مخلب الشيطان ( نبات الكُلَّاب ) . ويعتبر <a href="#form_form">ARTHROCALM</a> منتجًا متكاملاً يستهدف عدة عوامل مهمة في تحسين صحة المفاصل، مثل تحسين الليونة والمرونة، وتقليل  ألام المفاصل و الالتهابات.
+                            <br>
+                            يتميز <a href="#form_form">ARTHROCALM</a> بكونه مكمل غذائي طبيعي 100%، ولا يسبب أي آثار جانبية سلبية   . ويمكن تناوله بسهولة، حيث يأتي بشكل أقراص  . </p>
+                        <p>
+                          
+                        <blockquote> ما هي فوائد مكونات <a href="#form_form">ARTHROCALM</a> ؟</blockquote>
+                        <h1 style="text-align: center;">مستخلص الكركمين</h1>
+                        <div style="text-align: center; margin-bottom: 20px;">
+                        <img src="thanks/mokawn/korkomeen.jpg" alt="">
+                    </div>
+                        <p> يتميز مستخلص الكركمين بقدرته  على تحسين صحة المفاصل والتخلص من ألام المفاصل  وذلك بفضل خصائصه الطبيعية التي تساعد في التخلص من ألام المفاصل  والالتهابات وتحسين الحركة. كما أن الكركمين يحتوي على مضادات الأكسدة ومضادات الالتهابات، مما يساعد على تقليل الألام  المرتبطة بالتهابات المفاصل. </p>
+                        <p> كما أن الكركمين يحتوي على مركبات تسمى "كيركومينويدات"، والتي تساعد على تحفيز إنتاج المواد المسؤولة عن تحسين صحة المفاصل، مثل البروتينات الانتيجينية الخاصة بالمفاصل والمصفوفة الخارجية للمفاصل.
+                        </p>
+                        <hr style="margin-bottom: 20px;">
+
+                        <h1 style="text-align: center;">مسحوق الثوم </h1>
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <img src="thanks/mokawn/thoom.jpg" alt="">
+                        </div>
+                        <p>
+                            يعتبر مسحوق الثوم من المكونات الطبيعية المفيدة في تخفيف آلام المفاصل وتحسين صحتها. فالثوم هو نبات يحتوي على مجموعة من المركبات الفعالة، بما في ذلك الأليسين، التي تعمل على تحسين صحة المفاصل.
+                        </p>
+                        <hr style="margin-bottom: 20px;">
+
+                        <h1 style="text-align: center;"> زيت اكليل الجبل </h1>
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <img src="thanks/mokawn/zet gabal.jpg" alt="">
+                        </div>
+                        <p>
+                            يحتوي زيت اكليل الجبل على مجموعة من المركبات النشطة، مثل الفلافونويدات والأحماض العضوية والأحماض الدهنية الأساسية، التي تساعد على تحسين صحة المفاصل والحد من الألم. فهو يحتوي على مركبات مضادة للالتهابات والأكسدة، مما يساعد في تخفيف الألم والتورم المرتبط بالالتهابات المفصلية.
+                        </p>
+                        <p>وبالإضافة إلى ذلك، فإن زيت اكليل الجبل يحتوي على مواد مضادة للفيروسات والبكتيريا، والتي تساعد على تحسين صحة المفاصل . كما أنه يحتوي على مواد تساعد على تحفيز تدفق الدم والأكسجين إلى المفاصل، مما يحسن الحركة ويقلل الألم.
+
+                        </p>
+                        <hr style="margin-bottom: 20px;">
+
+                        <h1 style="text-align: center;"> مستخلص الزنجبيل</h1>
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <img src="thanks/mokawn/zangabeel.jpg" alt="">
+                        </div>
+                        <p>
+                            يعتبر مستخلص الزنجبيل من المكونات الطبيعية الفعالة في تحسين صحة المفاصل وتخفيف الألم المرتبط بها. فالزنجبيل هو نبات يحتوي على مجموعة من المركبات النشطة، بما في ذلك الجينجيرو، والتي تعتبر مضادة للالتهابات الطبيعية.
+                        </p>
+                        <p>
+                            حتوي مستخلص الزنجبيل على خصائص مضادة للالتهابات ومضادة للأكسدة، والتي تساعد على تقليل الألم المرتبط بالتهابات المفاصل. كما أن الزنجبيل يحتوي على مواد مضادة للأكسدة، والتي تساعد على تحسين صحة المفاصل والحد من تلف الخلايا.
+                        </p>
+                        <p>
+                            كما أن مستخلص الزنجبيل يمتلك خصائص تحسين الدورة الدموية وتحفيز تدفق الدم والأكسجين إلى المفاصل، مما يحسن الحركة ويقلل الألم. ويمكن تناول  مستخلص الزنجبيل كجزء من نظام غذائي صحي،  لتحسين صحة المفاصل وتخفيف الألم و لذلك لدينا المكمل الغذائي ARTHROCALM يحتوي على هذا المكون المهم .
+                        </p>
+                        <hr style="margin-bottom: 20px;">
+                        <h1 style="text-align: center;">  مخلب الشيطان ( نبات الكُلَّاب ) </h1>
+                        <div style="text-align: center; margin-bottom: 20px;">
+                            <img src="thanks/mokawn/shaytan.jpg" alt="">
+                        </div>
+                        <p>
+                            نبات الكُلَّاب هو نوع من النباتات الطبيعية  التي تنمو في المناطق الاستوائية، ويتميز بمجموعة من الفوائد الصحية.  
+                        </p>
+                        <p>
+                            يحتوي نبات الكُلَّاب على مجموعة من المركبات النشطة، بما في ذلك السابونين، 
+                            والتي تعمل كمضادات للالتهابات ومهدئات للألم. كما أنه يحتوي على مركبات مضادة للأكسدة، والتي تساعد على تحسين صحة المفاصل والحد من التلف الخلوي.
+
+
+                        </p>
+
+                        <h1> نصائح الإستخدام </h1>
+                        <p> تناول قرصين مرتين يومياً قبل كل وجبة . </p>
+                      
+                        
+                        <blockquote> كيف عرفت عن <a href="#form_form">ARTHROCALM</a> ؟</blockquote>
+                        <p> نصحتني به زوجتي عندما رأت انني اعاني يومياً من ألام المفاصل 
+                            <a href="#form_form">
+                         </a>.
+                        </p>
+                        <blockquote> كيف تستطيعون شراء <a href="#form_form">ARTHROCALM</a> ؟</blockquote>
+
+                        <ul>
+                        <li><p> تستطيعون طلب <a href="#form_form">ARTHROCALM</a> عن طريق ملء النموذج بالأسفل و هذه هي الطريقة الوحيدة الرسمية لطلب هذا المنتج  </p></li>
+                        <li><p> بعد ذلك سوف يتم التواصل معك لتأكيد عنوان الوصول.  </p></li>
+                        <li> <p> المريح هنا انه ليس عليك ان تدفع اي شيئ مقدماً و الدفع فقط عند وصول المنتج . </p></li>
+                    </ul>
+                        <p><a href="#form_form"><img alt
+                                    style="max-width:279px;background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-8)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"
+                                    class=center src='product.jpg'></a>
+                        </p>
+                        <blockquote><a href="#form_form">ARTHROCALM</a></blockquote>
+                       
+                     
+                        <blockquote> عندما تكـون بصحة جيدة، سوف تشعر انك تمتلك الحياة بأكملها .
+                        </blockquote>
+                        <div id="form_form"></div>
+                        <p>  باختصار
+                            إذا
+                            كنت تعاني من التهاب المفاصل والظهر، انظر إلى بعين الاعتبار : <a
+                                href=#form_form><b>ARTHROCALM
+                                    - يقضي علي ألام  المفاصل!</b></a></p>
+
+                                    <h2 class="glow" style="    font-size: 31px;text-align: center;">و الأن يوجد تخفيض بنسبة 50% عند شرائك لدورة ARTHROCALM <br>أسرع للطلب لأن العرض لفترة محدودة .</h2>
+                     
+                        <div class=features-wrapper><span class=toform></span>
+                              
+                                <style>
+
+                                    .glow{
+                                      font-size:3rem;
+                                      color:black;
+                                      font-weight: bold;
+                                      animation-name:glow;
+                                      animation-duration:0.5s;
+                                      animation-iteration-count:infinite;
+                                      animation-direction:alternate;
+                                    }
+                                    
+                                    @keyframes glow{
+                                      from{text-shadow:0px 0px 5px #fff,0px 0px 0px #ff0000;}
+                                      to{text-shadow:2px 20px 20px #fff,0px 10px 50px #ff0000;}
+                                    }
+                                                </style>
+                                
+                                <div
+                                    style="border:1px solid #de0606; border-radius: 15px; box-shadow: 0px 0px 15px #de0606;">
+                                    <form class="order_form" action="#" method="post">
+
+                                        <div class=prod_img_wrapper> <img src='product.jpg' width=200 class=prod_img
+                                            style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-8)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important; max-width: 200px;">
+                                        <div class=priceс><span class=discountс>تخفيض!</span> <s><span
+                                                    class="js_old_price price_old">DZD 11980 </span></s><br
+                                                class=sf-hidden>
+                                            <b class="new_price js_new_price price_main">DZD 5990 </b>
+                                        </div>
+                                    </div>
+                                        <div style=margin-top:20px> <br></div> <label for=name class=data_label>ادخل اسمك:
+                                        </label><input class=wheel_input type=text name=name required id=name
+                                            placeholder="الإسم
+" value><label for=phone class=data_label>رقم الهاتف:
+                                        </label> <input class=wheel_input type=text id=phone name=phone required
+                                            placeholder="ادخل رقم هاتفك"  value> <button class=main-link type=submit>اطلب
+                                            ARTHROCALM
+                                            بخصم 50%!</button>
+                                    </form>
+                                </div>
+
+                                <style>
+                                    .wheel_input::placeholder {
+                                        color: #d31812;
+                                    }
+                                </style>
+                            </div>
+                            <center>
+                                <h2 class=time_remains_title>العرض ساري حتى:
+                                    <span class=time_remains><span id="current_date_time_block"></span>
+                                        <script type="text/javascript">
+
+                                            /* функция добавления ведущих нулей */
+                                            /* (если число меньше десяти, перед числом добавляем ноль) */
+                                            function zero_first_format(value) {
+                                                if (value < 10) {
+                                                    value = '0' + value;
+                                                }
+                                                return value;
+                                            }
+
+                                            /* функция получения текущей даты и времени */
+                                            function date_time() {
+                                                var current_datetime = new Date();
+                                                var day = zero_first_format(current_datetime.getDate());
+                                                var month = zero_first_format(current_datetime.getMonth() + 1);
+                                                var year = current_datetime.getFullYear();
+                                                var hours = zero_first_format(current_datetime.getHours());
+                                                var minutes = zero_first_format(current_datetime.getMinutes());
+                                                var seconds = zero_first_format(current_datetime.getSeconds());
+
+                                                return day + "." + month + "." + year;
+                                            }
+
+                                            /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+                                            document.getElementById('current_date_time_block').innerHTML = date_time();
+                                        </script>
+                                    </span>
+                                </h2> <br>
+                            </center>
+                            <style class=sf-hidden>
+                                .order_block {
+                                    font-family: 'Arial', sans-serif
+                                }
+
+                                .prod_img_wrapper {
+                                    max-width: 300px;
+                                    margin: 15px auto;
+                                    position: relative
+                                }
+
+                                .prod_img {
+                                    max-width: 300px
+                                }
+
+                                .priceс {
+                                    position: absolute;
+                                    font-family: 'Arial', sans-serif;
+                                    right: 0;
+                                    bottom: 0;
+                                    color: #000;
+                                    box-shadow: rgba(0, 0, 0, 0.8) 0px 3px 30px;
+                                    width: 165px;
+                                    height: 98px;
+                                    text-align: center !important;
+                                    font-size: 19px;
+                                    font-weight: bold;
+                                    line-height: 1.3;
+                                    transform: rotateZ(-7deg);
+                                    margin: -0px auto 0px;
+                                    background: linear-gradient(to right, rgb(238, 165, 19) 0%, rgb(253, 237, 19) 100%);
+                                    border-width: 2px;
+                                    border-style: solid;
+                                    border-color: rgb(255, 255, 255);
+                                    border-image: initial;
+                                    border-radius: 19%
+                                }
+
+                                span.discountс {
+                                    display: block;
+                                    margin-top: 9px;
+                                    font-size: 18px
+                                }
+
+                                .price_main {
+                                    border-bottom: 2px solid #d31812;
+                                    font-size: 24px;
+                                    line-height: 0px;
+                                    margin: 0 auto
+                                }
+
+                                .js_old_price {
+                                    display: block;
+                                    margin: 0 auto
+                                }
+
+                                .wheel_input {
+                                    padding: 10px !important;
+                                    display: block !important;
+                                    margin: 0 auto 20px !important;
+                                    padding: 10px !important;
+                                    width: 50% !important;
+                                    border: 2px solid grey !important;
+                                    border-radius: 5px !important
+                                }
+
+                                .data_label {
+                                    line-height: 30px
+                                }
+
+                                .order_form {
+                                    display: block !important;
+                                    margin: 0 auto !important;
+                                    text-align: center !important
+                                }
+
+                                @media screen and (max-width:480px) {
+                                    .wheel_input {
+                                        width: 90% !important
+                                    }
+                                }
+
+                                .main-link {
+                                    display: block;
+                                    margin: 40px auto;
+                                    padding: 20px;
+                                    font-size: 20px;
+                                    text-decoration: none;
+                                    background-color: #de0606;
+                                    text-align: center;
+                                    color: #fff !important;
+                                    border-radius: 4px;
+                                    border: none;
+                                    cursor: pointer
+                                }
+
+                                .main-link:hover {
+                                    opacity: 0.8
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <h2 style="margin-bottom:2px; text-align: right;"> التعليقـات </h2>
+
+
+
+
+                    <div id=comments>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 08.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 08.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-2 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 08.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 08.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-2 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 07.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 07.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 07.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 06.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-2 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 06.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-2 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 06.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 06.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 05.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 05.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 05.03.2022</span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 05.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist sf-hidden">
+                            <li class="comment even thread-even depth-1 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 05.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist mob sf-hidden">
+                            <li class="comment even thread-even depth-2 sf-hidden">
+                                <article class="comment sf-hidden">
+                                    <footer class="comment-meta sf-hidden">
+                                        <div class="comment-author vcard sf-hidden">
+
+                                            <span class="time sf-hidden"> | 04.03.2022 </span>
+                                        </div>
+                                    </footer>
+
+
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist mob">
+                            <li class="comment even thread-even depth-1">
+                                <article class=comment>
+                                    <footer class=comment-meta>
+                                        <div class="comment-author vcard">
+                                            <img alt class="avatar avatar-68 photo"
+                                                src="thanks/assets2/images/comm1.jpg">
+                                            <span>
+                                                <span class=fn> هـادي وناني الأشقـر </span></span>
+                                            <span class=time> | 04.03.2022 </span>
+                                        </div>
+                                    </footer>
+                                    <div class=comment-content>
+                                        <p> عائلتنا بأكملها تستخدم <a
+                                                href=#form_form>ARTHROCALM</a>.
+                                            كلنا  رياضيين. لقد حصلنا علي هذا المنتج الرائع بتخفيض كبير , شكراً لكم جميعاً. </p>
+                                    </div>
+                                    <div class=reply>
+                                    </div>
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist mob">
+                            <li class="comment even thread-even depth-1">
+                                <article class=comment>
+                                    <footer class=comment-meta>
+                                        <div class="comment-author vcard">
+                                            <img alt class="avatar avatar-68 photo"
+                                                src="thanks/assets2/images/comm2.jpg">
+                                            <span><span class=fn> سـالي </span></span> <span class=time> | 04.03.2022
+                                            </span>
+                                        </div>
+                                    </footer>
+                                    <div class=comment-content>
+                                        <p> مرحبًا  ! لقـد <a
+                                                href=#form_form>طلبت
+                                                ARTHROCALM</a> لي ولزوجي. آمل أن يساعدنا. </p>
+                                    </div>
+                                    <div class=reply>
+                                    </div>
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist mob">
+                            <li class="comment even thread-even depth-1">
+                                <article class=comment>
+                                    <footer class=comment-meta>
+                                        <div class="comment-author vcard">
+                                            <img alt class="avatar avatar-68 photo"
+                                                src=thanks/assets2/images/comm3.jpg>
+                                            <span><span class=fn> إليسـار </span></span> <span class=time> | 04.03.2022
+                                            </span>
+                                        </div>
+                                    </footer>
+                                    <div class=comment-content>
+                                        <p> للأشخاص الذين يعيشون حياة نشطة، <a
+                                                href=#form_form>ARTHROCALM</a>
+                                            لا غنى عنه. الإصابات والانخلاعات والالتواءات - أنه يقضي على جميع أنواع الألم
+                                            بشكل جيد للغاية! </p>
+                                    </div>
+                                    <div class=reply>
+                                    </div>
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist mob">
+                            <li class="comment even thread-even depth-1">
+                                <article class=comment>
+                                    <footer class=comment-meta>
+                                        <div class="comment-author vcard">
+                                            <img alt class="avatar avatar-68 photo"
+                                                src="thanks/assets2/images/comm4.jpg">
+                                            <span><span class=fn> كارلا </span></span> <span class=time> | 04.03.2022
+                                            </span>
+                                        </div>
+                                    </footer>
+                                    <div class=comment-content>
+                                        <p> سمعت أن <a
+                                                href=#form_form>ARTHROCALM</a>
+                                            يباع الآن في
+                                            العديد من البلدان. إنه مكمل غذائي رائع جدًا وفعّـال! </p>
+                                    </div>
+                                    <div class=reply>
+                                    </div>
+                                </article>
+                            </li>
+                        </ol>
+                        <ol class="commentlist mob">
+                            <li class="comment even thread-even depth-2">
+                                <article class=comment>
+                                    <footer class=comment-meta>
+                                        <div class="comment-author vcard">
+                                            <img alt class="avatar avatar-68 photo"
+                                                src="thanks/assets2/images/comm5.jpg">
+                                            <span><span class=fn> رولا شمعـون </span></span> <span class=time> |
+                                                04.03.2022 </span>
+                                        </div>
+                                    </footer>
+                                    <div class=comment-content>
+                                        <p> ARTHROCALM مكمل غذائي قوي جدًا، فهو يساعد بسرعة ولفترة طويلة. لسوء الحظ، أعاني من
+                                            الالتهاب العظمي الغضروفي والتهاب المفاصل في الركبة. كان عليّ التفكـير في
+                                            تغيير
+                                            وظيفتي بسبب ذلك - أنا معلمة. ARTHROCALM ساعدني في التخلص من كل هذه الألام  . على الأقل
+                                            أشعر
+                                            بالراحة. أنا باستمرار أطلبه من <a
+                                                href=#form_form>النموذج الرسمي للطلب 
+                                                </a>. أنصح الجميع بالقيام بنفس الشيء. </p>
+                                    </div>
+                                    <div class=reply>
+                                    </div>
+                                </article>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <p class=text-center><a class=btn
+                            href=#form_form>
+                            النموذج الرسمي لطلب 
+                            ARTHROCALM</a></p>
+                </div>
+                <br>
+                <div class=news_viewall>
+                </div>
+            </div>
+        </div>
+        <div class="sitebar sf-hidden">
+
+
+
+        </div>
+        <div style=clear:both></div>
+    </div>
+    <div id=footer>
+        <div class=footcont>
+            Copyright © <span class=ryear>
+                2023</span>
+        </div>
+    </div>
+    <div class=spin-result-wrapper style=display:none> </div>
+    <style class=sf-hidden>
+        .spin-result-wrapper,
+        .spin-wrapper {
+            text-align: center
+        }
+
+        .spin-wrapper {
+            -webkit-box-shadow: 0 0 10px;
+            box-shadow: 0 0 10px;
+            border: 3px solid red;
+            padding: 20px 10px;
+            border-radius: 10px;
+            box-sizing: border-box
+        }
+
+        .spin-result-wrapper {
+            padding: 0 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+            left: 0;
+            height: 100%;
+            position: fixed;
+            background-color: rgba(0, 0, 0, .6)
+        }
+
+        @keyframes pop-up-appear {
+            0% {
+                transform: translateY(-2000px)
+            }
+
+            30% {
+                transform: translateY(100px)
+            }
+
+            100% {
+                transform: translateY(0)
+            }
+        }
+
+        @keyframes pop-up-appear-before {
+            0% {
+                transform: scale(0)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        @keyframes pop-up-appear-after {
+            0% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes super-rotation {
+            70% {
+                -webkit-transform: rotate(1783deg);
+                transform: rotate(1783deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(1774deg);
+                transform: rotate(1774deg)
+            }
+        }
+
+        @keyframes super-rotation {
+            70% {
+                -webkit-transform: rotate(1860deg);
+                transform: rotate(1860deg)
+            }
+
+            100% {
+                -webkit-transform: rotate(1867deg);
+                transform: rotate(1867deg)
+            }
+        }
+
+        .time_remains {
+            font-size: 1.1em;
+            color: red;
+            font-weight: 700
+        }
+
+        .time_remains_title {
+            padding-top: 15px;
+            text-align: center;
+            font-size: 22px
+        }
+    </style>
